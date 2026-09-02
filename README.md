@@ -12,14 +12,16 @@ curso de segurança do trabalho
 
 | 📋 **Informações Gerais** | 📍 **Detalhes** |
 | :--- | :--- |
-| **Curso** | Mecatrônica |
-| **Tema** | Robótica em Ambiente de Mecatrônica |
-| **Local / Laboratório** | Sala 108 |
+| **Curso** | desenvolvimento desistemas|
+| **Tema** | Loja de academia |
+| **Local / Laboratório** | Sala 107 |
 
 ### 👥 Integrantes da Equipe
-- **nome do integrante**
-- **nome do integrante**
-- **Mizael Souto**
+- **Gabriel Santana**
+- **Gabrie Rocha**
+- **Henrique Guedes**
+- **Caleb Eduardo**
+- **João Vitor**
 
 Crie um site completo para uma academia/personal trainer, com foco em vendas de planos de treino e suplementos. O site deve ter:
 
