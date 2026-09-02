@@ -1,6 +1,25 @@
-# Evolve Fitness Hub
 
 Prompt:
+TIPO DE CABEÇALHO 2
+
+curso de segurança do trabalho
+
+
+
+# 🤖 Projeto de Mecatrônica — Aplicações em Robótica
+
+---
+
+| 📋 **Informações Gerais** | 📍 **Detalhes** |
+| :--- | :--- |
+| **Curso** | Mecatrônica |
+| **Tema** | Robótica em Ambiente de Mecatrônica |
+| **Local / Laboratório** | Sala 108 |
+
+### 👥 Integrantes da Equipe
+- **nome do integrante**
+- **nome do integrante**
+- **Mizael Souto**
 
 Crie um site completo para uma academia/personal trainer, com foco em vendas de planos de treino e suplementos. O site deve ter:
 
