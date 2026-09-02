@@ -4,7 +4,7 @@ TIPO DE CABEÇALHO 2
 
 curso de desenvolvimento de sistemas
 
-
+Site: https://trainsmart-shop.lovable.app
 
 # 💪 Projeto de Site de academia — Aplicações em Desenvolvimento de Sistemas
 
