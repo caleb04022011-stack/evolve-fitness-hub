@@ -10,33 +10,141 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as CarrinhoRouteImport } from './routes/carrinho'
+import { Route as ContatoRouteImport } from './routes/contato'
+import { Route as LoginRouteImport } from './routes/login'
+import { Route as PlanosRouteImport } from './routes/planos'
+import { Route as SuplementosIndexRouteImport } from './routes/suplementos.index'
+import { Route as SuplementosSlugRouteImport } from './routes/suplementos.$slug'
+import { Route as TreinosIndexRouteImport } from './routes/treinos.index'
+import { Route as TreinosSlugRouteImport } from './routes/treinos.$slug'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const CarrinhoRoute = CarrinhoRouteImport.update({
+  id: '/carrinho',
+  path: '/carrinho',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContatoRoute = ContatoRouteImport.update({
+  id: '/contato',
+  path: '/contato',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LoginRoute = LoginRouteImport.update({
+  id: '/login',
+  path: '/login',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PlanosRoute = PlanosRouteImport.update({
+  id: '/planos',
+  path: '/planos',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SuplementosIndexRoute = SuplementosIndexRouteImport.update({
+  id: '/suplementos/',
+  path: '/suplementos/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SuplementosSlugRoute = SuplementosSlugRouteImport.update({
+  id: '/suplementos/$slug',
+  path: '/suplementos/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TreinosIndexRoute = TreinosIndexRouteImport.update({
+  id: '/treinos/',
+  path: '/treinos/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TreinosSlugRoute = TreinosSlugRouteImport.update({
+  id: '/treinos/$slug',
+  path: '/treinos/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/carrinho': typeof CarrinhoRoute
+  '/contato': typeof ContatoRoute
+  '/login': typeof LoginRoute
+  '/planos': typeof PlanosRoute
+  '/suplementos/$slug': typeof SuplementosSlugRoute
+  '/treinos/$slug': typeof TreinosSlugRoute
+  '/suplementos/': typeof SuplementosIndexRoute
+  '/treinos/': typeof TreinosIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/carrinho': typeof CarrinhoRoute
+  '/contato': typeof ContatoRoute
+  '/login': typeof LoginRoute
+  '/planos': typeof PlanosRoute
+  '/suplementos/$slug': typeof SuplementosSlugRoute
+  '/treinos/$slug': typeof TreinosSlugRoute
+  '/suplementos': typeof SuplementosIndexRoute
+  '/treinos': typeof TreinosIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/carrinho': typeof CarrinhoRoute
+  '/contato': typeof ContatoRoute
+  '/login': typeof LoginRoute
+  '/planos': typeof PlanosRoute
+  '/suplementos/$slug': typeof SuplementosSlugRoute
+  '/treinos/$slug': typeof TreinosSlugRoute
+  '/suplementos/': typeof SuplementosIndexRoute
+  '/treinos/': typeof TreinosIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/carrinho'
+    | '/contato'
+    | '/login'
+    | '/planos'
+    | '/suplementos/$slug'
+    | '/treinos/$slug'
+    | '/suplementos/'
+    | '/treinos/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/carrinho'
+    | '/contato'
+    | '/login'
+    | '/planos'
+    | '/suplementos/$slug'
+    | '/treinos/$slug'
+    | '/suplementos'
+    | '/treinos'
+  id:
+    | '__root__'
+    | '/'
+    | '/carrinho'
+    | '/contato'
+    | '/login'
+    | '/planos'
+    | '/suplementos/$slug'
+    | '/treinos/$slug'
+    | '/suplementos/'
+    | '/treinos/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  CarrinhoRoute: typeof CarrinhoRoute
+  ContatoRoute: typeof ContatoRoute
+  LoginRoute: typeof LoginRoute
+  PlanosRoute: typeof PlanosRoute
+  SuplementosSlugRoute: typeof SuplementosSlugRoute
+  TreinosSlugRoute: typeof TreinosSlugRoute
+  SuplementosIndexRoute: typeof SuplementosIndexRoute
+  TreinosIndexRoute: typeof TreinosIndexRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +156,75 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/carrinho': {
+      id: '/carrinho'
+      path: '/carrinho'
+      fullPath: '/carrinho'
+      preLoaderRoute: typeof CarrinhoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contato': {
+      id: '/contato'
+      path: '/contato'
+      fullPath: '/contato'
+      preLoaderRoute: typeof ContatoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/login': {
+      id: '/login'
+      path: '/login'
+      fullPath: '/login'
+      preLoaderRoute: typeof LoginRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/planos': {
+      id: '/planos'
+      path: '/planos'
+      fullPath: '/planos'
+      preLoaderRoute: typeof PlanosRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/suplementos/': {
+      id: '/suplementos/'
+      path: '/suplementos'
+      fullPath: '/suplementos/'
+      preLoaderRoute: typeof SuplementosIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/suplementos/$slug': {
+      id: '/suplementos/$slug'
+      path: '/suplementos/$slug'
+      fullPath: '/suplementos/$slug'
+      preLoaderRoute: typeof SuplementosSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/treinos/': {
+      id: '/treinos/'
+      path: '/treinos'
+      fullPath: '/treinos/'
+      preLoaderRoute: typeof TreinosIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/treinos/$slug': {
+      id: '/treinos/$slug'
+      path: '/treinos/$slug'
+      fullPath: '/treinos/$slug'
+      preLoaderRoute: typeof TreinosSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  CarrinhoRoute: CarrinhoRoute,
+  ContatoRoute: ContatoRoute,
+  LoginRoute: LoginRoute,
+  PlanosRoute: PlanosRoute,
+  SuplementosSlugRoute: SuplementosSlugRoute,
+  TreinosSlugRoute: TreinosSlugRoute,
+  SuplementosIndexRoute: SuplementosIndexRoute,
+  TreinosIndexRoute: TreinosIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
