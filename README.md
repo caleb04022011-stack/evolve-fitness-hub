@@ -2,7 +2,7 @@
 Prompt:
 TIPO DE CABEÇALHO 2
 
-curso de segurança do trabalho
+curso de desenvolvimento de sistemas
 
 
 
@@ -23,7 +23,6 @@ curso de segurança do trabalho
 - **Caleb Eduardo**
 - **João Vitor**
 
-Crie um site completo para uma academia/personal trainer, com foco em vendas de planos de treino e suplementos. O site deve ter:
 
 Design geral:
 
