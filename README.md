@@ -6,13 +6,13 @@ curso de desenvolvimento de sistemas
 
 
 
-# 🤖 Projeto de Mecatrônica — Aplicações em Robótica
+# 💪 Projeto de Site de academia — Aplicações em Desenvolvimento de Sistemas
 
 ---
 
 | 📋 **Informações Gerais** | 📍 **Detalhes** |
 | :--- | :--- |
-| **Curso** | desenvolvimento desistemas|
+| **Curso** | Desenvolvimento de Sistemas|
 | **Tema** | Loja de academia |
 | **Local / Laboratório** | Sala 107 |
 
